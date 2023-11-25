@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-e",
+  "editForm": "i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-e",
+  "external": false,
+  "caption": "Прием и обр поруч",
+  "name": "IISOperacionnoe_podrazdelenieПриемИОбрПоручL",
+  "className": "ПриемИОбрПоручL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч",
+      "modelProjection": "ПриемИОбрПоручL"
+    }
+  ]
+}

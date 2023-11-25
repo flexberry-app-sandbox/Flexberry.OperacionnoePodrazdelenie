@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Организация",
+      "projection": "ОрганизацияL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Прием и обр поруч",
+  "name": "IISOperacionnoe_podrazdelenieПриемИОбрПоручE",
+  "className": "ПриемИОбрПоручE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч",
+      "modelProjection": "ПриемИОбрПоручE"
+    }
+  ]
+}

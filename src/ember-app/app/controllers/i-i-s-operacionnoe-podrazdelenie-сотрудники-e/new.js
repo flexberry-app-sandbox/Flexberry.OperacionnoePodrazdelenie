@@ -1,0 +1,4 @@
+import IISOperacionnoe_podrazdelenieСотрудникиEController from '../i-i-s-operacionnoe-podrazdelenie-сотрудники-e';
+
+var IISOperacionnoe_podrazdelenieСотрудникиENewController = IISOperacionnoe_podrazdelenieСотрудникиEController;
+export default IISOperacionnoe_podrazdelenieСотрудникиENewController;

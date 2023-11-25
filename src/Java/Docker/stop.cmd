@@ -1,0 +1,1 @@
+docker-compose -p operacionnoe_podrazdelenie-java down

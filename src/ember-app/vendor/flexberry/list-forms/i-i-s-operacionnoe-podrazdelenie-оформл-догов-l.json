@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-operacionnoe-podrazdelenie-оформл-догов-e",
+  "editForm": "i-i-s-operacionnoe-podrazdelenie-оформл-догов-e",
+  "external": false,
+  "caption": "Оформл догов",
+  "name": "IISOperacionnoe_podrazdelenieОформлДоговL",
+  "className": "ОформлДоговL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-operacionnoe-podrazdelenie-оформл-догов",
+      "modelProjection": "ОформлДоговL"
+    }
+  ]
+}

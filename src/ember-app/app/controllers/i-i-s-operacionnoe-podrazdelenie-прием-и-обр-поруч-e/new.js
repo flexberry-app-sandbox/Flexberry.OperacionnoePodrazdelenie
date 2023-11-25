@@ -1,0 +1,4 @@
+import IISOperacionnoe_podrazdelenieПриемИОбрПоручEController from '../i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-e';
+
+var IISOperacionnoe_podrazdelenieПриемИОбрПоручENewController = IISOperacionnoe_podrazdelenieПриемИОбрПоручEController;
+export default IISOperacionnoe_podrazdelenieПриемИОбрПоручENewController;

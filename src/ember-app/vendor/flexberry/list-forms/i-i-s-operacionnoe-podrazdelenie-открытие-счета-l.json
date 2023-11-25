@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-operacionnoe-podrazdelenie-открытие-счета-e",
+  "editForm": "i-i-s-operacionnoe-podrazdelenie-открытие-счета-e",
+  "external": false,
+  "caption": "Открытие счета",
+  "name": "IISOperacionnoe_podrazdelenieОткрытиеСчетаL",
+  "className": "ОткрытиеСчетаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-operacionnoe-podrazdelenie-открытие-счета",
+      "modelProjection": "ОткрытиеСчетаL"
+    }
+  ]
+}

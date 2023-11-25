@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-operacionnoe-podrazdelenie-сотрудники-e",
+  "editForm": "i-i-s-operacionnoe-podrazdelenie-сотрудники-e",
+  "external": false,
+  "caption": "Сотрудники",
+  "name": "IISOperacionnoe_podrazdelenieСотрудникиL",
+  "className": "СотрудникиL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-operacionnoe-podrazdelenie-сотрудники",
+      "modelProjection": "СотрудникиL"
+    }
+  ]
+}

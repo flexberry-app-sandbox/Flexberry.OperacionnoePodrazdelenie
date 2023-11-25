@@ -1,0 +1,114 @@
+<h3 class="ui header">{{t "forms.i-i-s-operacionnoe-podrazdelenie-открытие-счета-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-operacionnoe-podrazdelenie-открытие-счета-e.датаОткрСчета-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.датаОткрСчета
+      class=(if (v-get validationModel "датаОткрСчета" "isInvalid") "error")
+      data-test-i-i-s-operacionnoe-podrazdelenie-открытие-счета-e-датаОткрСчета=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "датаОткрСчета" "message")}}
+  </div>
+  <div class="field" data-test-i-i-s-operacionnoe-podrazdelenie-открытие-счета-e-типСчета="true">
+    <label>{{t "forms.i-i-s-operacionnoe-podrazdelenie-открытие-счета-e.типСчета-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-operacionnoe-podrazdelenie-тип-счета")
+      value=model.типСчета
+      class=(if (v-get validationModel "типСчета" "isInvalid") "error")
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "типСчета" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.видВалюты
+      class=(if (v-get validationModel "видВалюты" "isInvalid") "error")
+      label=(t "forms.i-i-s-operacionnoe-podrazdelenie-открытие-счета-e.видВалюты-caption")
+      data-test-i-i-s-operacionnoe-podrazdelenie-открытие-счета-e-видВалюты=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "видВалюты" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-operacionnoe-podrazdelenie-открытие-счета-e.докНаОткрСчета-caption"}}</label>
+    {{flexberry-checkbox
+      readonly=readonly
+      value=model.докНаОткрСчета
+      class=(if (v-get validationModel "докНаОткрСчета" "isInvalid") "error")
+      data-test-i-i-s-operacionnoe-podrazdelenie-открытие-счета-e-докНаОткрСчета=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "докНаОткрСчета" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.лицСчета
+      class=(if (v-get validationModel "лицСчета" "isInvalid") "error")
+      label=(t "forms.i-i-s-operacionnoe-podrazdelenie-открытие-счета-e.лицСчета-caption")
+      data-test-i-i-s-operacionnoe-podrazdelenie-открытие-счета-e-лицСчета=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "лицСчета" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-operacionnoe-podrazdelenie-открытие-счета-e.организация-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.организация
+      displayAttributeName="наименование"
+      autocomplete=true
+      relationName="организация"
+      projection="ОрганизацияL"
+      title=(t "forms.i-i-s-operacionnoe-podrazdelenie-открытие-счета-e.организация-caption")
+      readonly=readonly
+      componentName="организацияLookup"
+      class=(if (v-get validationModel "организация" "isInvalid") "error")
+      data-test-i-i-s-operacionnoe-podrazdelenie-открытие-счета-e-организация=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "организация" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-operacionnoe-podrazdelenie-открытие-счета-e.сотрудники-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.сотрудники
+      displayAttributeName="фИО"
+      autocomplete=true
+      relationName="сотрудники"
+      projection="СотрудникиL"
+      title=(t "forms.i-i-s-operacionnoe-podrazdelenie-открытие-счета-e.сотрудники-caption")
+      readonly=readonly
+      componentName="сотрудникиLookup"
+      class=(if (v-get validationModel "сотрудники" "isInvalid") "error")
+      data-test-i-i-s-operacionnoe-podrazdelenie-открытие-счета-e-сотрудники=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "сотрудники" "message")}}
+  </div>
+</form>

@@ -1,0 +1,4 @@
+import IISOperacionnoe_podrazdelenieЗакрытиеСчетаEController from '../i-i-s-operacionnoe-podrazdelenie-закрытие-счета-e';
+
+var IISOperacionnoe_podrazdelenieЗакрытиеСчетаENewController = IISOperacionnoe_podrazdelenieЗакрытиеСчетаEController;
+export default IISOperacionnoe_podrazdelenieЗакрытиеСчетаENewController;

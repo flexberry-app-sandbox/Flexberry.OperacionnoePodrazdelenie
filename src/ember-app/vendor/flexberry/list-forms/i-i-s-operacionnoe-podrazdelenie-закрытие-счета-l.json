@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-operacionnoe-podrazdelenie-закрытие-счета-e",
+  "editForm": "i-i-s-operacionnoe-podrazdelenie-закрытие-счета-e",
+  "external": false,
+  "caption": "Закрытие счета",
+  "name": "IISOperacionnoe_podrazdelenieЗакрытиеСчетаL",
+  "className": "ЗакрытиеСчетаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-operacionnoe-podrazdelenie-закрытие-счета",
+      "modelProjection": "ЗакрытиеСчетаL"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-operacionnoe-podrazdelenie-клиенты-e",
+  "editForm": "i-i-s-operacionnoe-podrazdelenie-клиенты-e",
+  "external": false,
+  "caption": "Клиенты",
+  "name": "IISOperacionnoe_podrazdelenieКлиентыL",
+  "className": "КлиентыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-operacionnoe-podrazdelenie-клиенты",
+      "modelProjection": "КлиентыL"
+    }
+  ]
+}

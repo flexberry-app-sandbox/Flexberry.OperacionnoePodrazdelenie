@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-operacionnoe-podrazdelenie-формир-досье-e",
+  "editForm": "i-i-s-operacionnoe-podrazdelenie-формир-досье-e",
+  "external": false,
+  "caption": "Формир досье",
+  "name": "IISOperacionnoe_podrazdelenieФормирДосьеL",
+  "className": "ФормирДосьеL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-operacionnoe-podrazdelenie-формир-досье",
+      "modelProjection": "ФормирДосьеL"
+    }
+  ]
+}

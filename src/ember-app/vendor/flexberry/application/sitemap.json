@@ -1,0 +1,85 @@
+﻿{
+  "applicationCaption": "Operacionnoe_podrazdelenie",
+  "applicationTitle": "Operacionnoe_podrazdelenie",
+  "items": [
+    {
+      "link": null,
+      "menuName": "operacionnoe-podrazdelenie",
+      "caption": "Operacionnoe_podrazdelenie",
+      "title": "Operacionnoe_podrazdelenie",
+      "children": [
+        {
+          "link": "i-i-s-operacionnoe-podrazdelenie-сотрудники-l",
+          "menuName": null,
+          "caption": "Сотрудники",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-operacionnoe-podrazdelenie-организация-l",
+          "menuName": null,
+          "caption": "Организация",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-operacionnoe-podrazdelenie-клиенты-l",
+          "menuName": null,
+          "caption": "Клиенты",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-operacionnoe-podrazdelenie-отдел-опер-подр-l",
+          "menuName": null,
+          "caption": "Отдел опер подр",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-operacionnoe-podrazdelenie-оформл-догов-l",
+          "menuName": null,
+          "caption": "Оформл догов",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-operacionnoe-podrazdelenie-закрытие-счета-l",
+          "menuName": null,
+          "caption": "Закрытие счета",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-operacionnoe-podrazdelenie-открытие-счета-l",
+          "menuName": null,
+          "caption": "Открытие счета",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-l",
+          "menuName": null,
+          "caption": "Прием и обр поруч",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-operacionnoe-podrazdelenie-должности-l",
+          "menuName": null,
+          "caption": "Должности",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-operacionnoe-podrazdelenie-формир-досье-l",
+          "menuName": null,
+          "caption": "Формир досье",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

@@ -1,0 +1,4 @@
+import IISOperacionnoe_podrazdelenieДолжностиEController from '../i-i-s-operacionnoe-podrazdelenie-должности-e';
+
+var IISOperacionnoe_podrazdelenieДолжностиENewController = IISOperacionnoe_podrazdelenieДолжностиEController;
+export default IISOperacionnoe_podrazdelenieДолжностиENewController;

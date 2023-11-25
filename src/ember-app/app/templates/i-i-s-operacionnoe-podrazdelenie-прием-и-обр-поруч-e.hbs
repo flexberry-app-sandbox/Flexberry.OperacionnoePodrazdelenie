@@ -1,0 +1,136 @@
+<h3 class="ui header">{{t "forms.i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.видОперац
+      class=(if (v-get validationModel "видОперац" "isInvalid") "error")
+      label=(t "forms.i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-e.видОперац-caption")
+      data-test-i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-e-видОперац=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "видОперац" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.счетПолуч
+      class=(if (v-get validationModel "счетПолуч" "isInvalid") "error")
+      label=(t "forms.i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-e.счетПолуч-caption")
+      data-test-i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-e-счетПолуч=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "счетПолуч" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-e.датаДоговора-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.датаДоговора
+      class=(if (v-get validationModel "датаДоговора" "isInvalid") "error")
+      data-test-i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-e-датаДоговора=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "датаДоговора" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.видПлатежа
+      class=(if (v-get validationModel "видПлатежа" "isInvalid") "error")
+      label=(t "forms.i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-e.видПлатежа-caption")
+      data-test-i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-e-видПлатежа=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "видПлатежа" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.суммаПлатеж
+      class=(if (v-get validationModel "суммаПлатеж" "isInvalid") "error")
+      label=(t "forms.i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-e.суммаПлатеж-caption")
+      data-test-i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-e-суммаПлатеж=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "суммаПлатеж" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.суммаСНДС
+      class=(if (v-get validationModel "суммаСНДС" "isInvalid") "error")
+      label=(t "forms.i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-e.суммаСНДС-caption")
+      data-test-i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-e-суммаСНДС=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "суммаСНДС" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.назначПлатеж
+      class=(if (v-get validationModel "назначПлатеж" "isInvalid") "error")
+      label=(t "forms.i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-e.назначПлатеж-caption")
+      data-test-i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-e-назначПлатеж=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "назначПлатеж" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-e.оплачено-caption"}}</label>
+    {{flexberry-checkbox
+      readonly=readonly
+      value=model.оплачено
+      class=(if (v-get validationModel "оплачено" "isInvalid") "error")
+      data-test-i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-e-оплачено=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "оплачено" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-e.подтвВыпБанка-caption"}}</label>
+    {{flexberry-checkbox
+      readonly=readonly
+      value=model.подтвВыпБанка
+      class=(if (v-get validationModel "подтвВыпБанка" "isInvalid") "error")
+      data-test-i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-e-подтвВыпБанка=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "подтвВыпБанка" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-e.организация-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.организация
+      displayAttributeName="наименование"
+      autocomplete=true
+      relationName="организация"
+      projection="ОрганизацияL"
+      title=(t "forms.i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-e.организация-caption")
+      readonly=readonly
+      componentName="организацияLookup"
+      class=(if (v-get validationModel "организация" "isInvalid") "error")
+      data-test-i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-e-организация=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "организация" "message")}}
+  </div>
+</form>

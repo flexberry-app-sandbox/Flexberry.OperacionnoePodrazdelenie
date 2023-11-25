@@ -1,0 +1,274 @@
+﻿{
+  "name": "IISOperacionnoe_podrazdelenieПриемИОбрПоруч",
+  "modelName": "i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч",
+  "className": "ПриемИОбрПоруч",
+  "nameSpace": "IIS.Operacionnoe_podrazdelenie",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "видОперац",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "видПлатежа",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаДоговора",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "назначПлатеж",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "оплачено",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "подтвВыпБанка",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "суммаПлатеж",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "суммаСНДС",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "счетПолуч",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "организация",
+      "relatedTo": "i-i-s-operacionnoe-podrazdelenie-организация",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ПриемИОбрПоручE",
+      "modelName": "i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч",
+      "attrs": [
+        {
+          "name": "видОперац",
+          "caption": "Вид операц",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "счетПолуч",
+          "caption": "Счет получ",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "датаДоговора",
+          "caption": "Дата договора",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "видПлатежа",
+          "caption": "Вид платежа",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "суммаПлатеж",
+          "caption": "Сумма платеж",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "суммаСНДС",
+          "caption": "Сумма СНДС",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "назначПлатеж",
+          "caption": "Назнач платеж",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "оплачено",
+          "caption": "Оплачено",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "подтвВыпБанка",
+          "caption": "Подтв вып банка",
+          "hidden": false,
+          "index": 8
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 10
+            }
+          ],
+          "index": 9,
+          "type": "standard",
+          "caption": "Организация",
+          "name": "организация",
+          "relatedTo": "i-i-s-operacionnoe-podrazdelenie-организация",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ПриемИОбрПоручL",
+      "modelName": "i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч",
+      "attrs": [
+        {
+          "name": "видОперац",
+          "caption": "Вид операц",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "счетПолуч",
+          "caption": "Счет получ",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "датаДоговора",
+          "caption": "Дата договора",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "видПлатежа",
+          "caption": "Вид платежа",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "суммаПлатеж",
+          "caption": "Сумма платеж",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "суммаСНДС",
+          "caption": "Сумма СНДС",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "назначПлатеж",
+          "caption": "Назнач платеж",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "оплачено",
+          "caption": "Оплачено",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "подтвВыпБанка",
+          "caption": "Подтв вып банка",
+          "hidden": false,
+          "index": 8
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Организация",
+              "hidden": false,
+              "index": 9
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Организация",
+          "name": "организация",
+          "relatedTo": "i-i-s-operacionnoe-podrazdelenie-организация",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

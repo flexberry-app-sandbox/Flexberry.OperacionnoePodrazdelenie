@@ -1,0 +1,4 @@
+import IISOperacionnoe_podrazdelenieКлиентыEController from '../i-i-s-operacionnoe-podrazdelenie-клиенты-e';
+
+var IISOperacionnoe_podrazdelenieКлиентыENewController = IISOperacionnoe_podrazdelenieКлиентыEController;
+export default IISOperacionnoe_podrazdelenieКлиентыENewController;

@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Сотрудники",
+      "projection": "СотрудникиL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Отдел опер подр",
+  "name": "IISOperacionnoe_podrazdelenieОтделОперПодрE",
+  "className": "ОтделОперПодрE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-operacionnoe-podrazdelenie-отдел-опер-подр",
+      "modelProjection": "ОтделОперПодрE"
+    }
+  ]
+}

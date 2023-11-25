@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-operacionnoe-podrazdelenie-организация-e",
+  "editForm": "i-i-s-operacionnoe-podrazdelenie-организация-e",
+  "external": false,
+  "caption": "Организация",
+  "name": "IISOperacionnoe_podrazdelenieОрганизацияL",
+  "className": "ОрганизацияL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-operacionnoe-podrazdelenie-организация",
+      "modelProjection": "ОрганизацияL"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+<h3 class="ui header">{{t "forms.i-i-s-operacionnoe-podrazdelenie-формир-досье-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.наименДосье
+      class=(if (v-get validationModel "наименДосье" "isInvalid") "error")
+      label=(t "forms.i-i-s-operacionnoe-podrazdelenie-формир-досье-e.наименДосье-caption")
+      data-test-i-i-s-operacionnoe-podrazdelenie-формир-досье-e-наименДосье=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "наименДосье" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-operacionnoe-podrazdelenie-формир-досье-e.датаОформл-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.датаОформл
+      class=(if (v-get validationModel "датаОформл" "isInvalid") "error")
+      data-test-i-i-s-operacionnoe-podrazdelenie-формир-досье-e-датаОформл=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "датаОформл" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.договора
+      class=(if (v-get validationModel "договора" "isInvalid") "error")
+      label=(t "forms.i-i-s-operacionnoe-podrazdelenie-формир-досье-e.договора-caption")
+      data-test-i-i-s-operacionnoe-podrazdelenie-формир-досье-e-договора=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "договора" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-operacionnoe-podrazdelenie-формир-досье-e.организация-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.организация
+      displayAttributeName="наименование"
+      autocomplete=true
+      relationName="организация"
+      projection="ОрганизацияL"
+      title=(t "forms.i-i-s-operacionnoe-podrazdelenie-формир-досье-e.организация-caption")
+      readonly=readonly
+      componentName="организацияLookup"
+      class=(if (v-get validationModel "организация" "isInvalid") "error")
+      data-test-i-i-s-operacionnoe-podrazdelenie-формир-досье-e-организация=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "организация" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-operacionnoe-podrazdelenie-формир-досье-e.сотрудники-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.сотрудники
+      displayAttributeName="фИО"
+      autocomplete=true
+      relationName="сотрудники"
+      projection="СотрудникиL"
+      title=(t "forms.i-i-s-operacionnoe-podrazdelenie-формир-досье-e.сотрудники-caption")
+      readonly=readonly
+      componentName="сотрудникиLookup"
+      class=(if (v-get validationModel "сотрудники" "isInvalid") "error")
+      data-test-i-i-s-operacionnoe-podrazdelenie-формир-досье-e-сотрудники=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "сотрудники" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-operacionnoe-podrazdelenie-формир-досье-e.клиенты-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.клиенты
+      displayAttributeName="фИО"
+      autocomplete=true
+      relationName="клиенты"
+      projection="КлиентыL"
+      title=(t "forms.i-i-s-operacionnoe-podrazdelenie-формир-досье-e.клиенты-caption")
+      readonly=readonly
+      componentName="клиентыLookup"
+      class=(if (v-get validationModel "клиенты" "isInvalid") "error")
+      data-test-i-i-s-operacionnoe-podrazdelenie-формир-досье-e-клиенты=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "клиенты" "message")}}
+  </div>
+</form>

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-operacionnoe-podrazdelenie-отдел-опер-подр-e",
+  "editForm": "i-i-s-operacionnoe-podrazdelenie-отдел-опер-подр-e",
+  "external": false,
+  "caption": "Отдел опер подр",
+  "name": "IISOperacionnoe_podrazdelenieОтделОперПодрL",
+  "className": "ОтделОперПодрL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-operacionnoe-podrazdelenie-отдел-опер-подр",
+      "modelProjection": "ОтделОперПодрL"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+import IISOperacionnoe_podrazdelenieОформлДоговEController from '../i-i-s-operacionnoe-podrazdelenie-оформл-догов-e';
+
+var IISOperacionnoe_podrazdelenieОформлДоговENewController = IISOperacionnoe_podrazdelenieОформлДоговEController;
+export default IISOperacionnoe_podrazdelenieОформлДоговENewController;
