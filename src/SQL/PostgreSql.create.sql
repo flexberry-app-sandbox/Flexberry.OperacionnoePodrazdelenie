@@ -53,7 +53,7 @@ CREATE TABLE ЗакрытиеСчета (
  ДатаЗакрСчета TIMESTAMP(3) NULL,
  Задолжности BOOLEAN NULL,
  ЛицСчета INT NULL,
- ТипСчета VARCHAR(13) NULL,
+ ТипСчета VARCHAR(15) NULL,
  Организация UUID NOT NULL,
  ОткрытиеСчета UUID NOT NULL,
  Сотрудники UUID NOT NULL,
@@ -66,7 +66,7 @@ CREATE TABLE ОткрытиеСчета (
  ДатаОткрСчета TIMESTAMP(3) NULL,
  ДокНаОткрСчета BOOLEAN NULL,
  ЛицСчета INT NULL,
- ТипСчета VARCHAR(13) NULL,
+ ТипСчета VARCHAR(15) NULL,
  Организация UUID NOT NULL,
  Сотрудники UUID NOT NULL,
  PRIMARY KEY (primaryKey));

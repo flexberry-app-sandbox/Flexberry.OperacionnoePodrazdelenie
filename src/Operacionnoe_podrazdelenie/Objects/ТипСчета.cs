@@ -12,6 +12,7 @@ namespace IIS.Operacionnoe_podrazdelenie
 {
     using System;
     using System.Xml;
+    using ICSSoft.STORMNET;
     
     
     // *** Start programmer edit section *** (Using statements)
@@ -31,36 +32,43 @@ namespace IIS.Operacionnoe_podrazdelenie
         // *** Start programmer edit section *** (ТипСчета.Текущий CustomAttributes)
 
         // *** End programmer edit section *** (ТипСчета.Текущий CustomAttributes)
+        [Caption("Текущий")]
         Текущий,
         
         // *** Start programmer edit section *** (ТипСчета.Расчетный CustomAttributes)
 
         // *** End programmer edit section *** (ТипСчета.Расчетный CustomAttributes)
+        [Caption("Расчетный")]
         Расчетный,
         
         // *** Start programmer edit section *** (ТипСчета.Бюджетный CustomAttributes)
 
         // *** End programmer edit section *** (ТипСчета.Бюджетный CustomAttributes)
+        [Caption("Бюджетный")]
         Бюджетный,
+        
+        // *** Start programmer edit section *** (ТипСчета.Депозитный CustomAttributes)
+
+        // *** End programmer edit section *** (ТипСчета.Депозитный CustomAttributes)
+        [Caption("Депозитный")]
+        Депозитный,
         
         // *** Start programmer edit section *** (ТипСчета.Специальный CustomAttributes)
 
         // *** End programmer edit section *** (ТипСчета.Специальный CustomAttributes)
+        [Caption("Специальный")]
         Специальный,
         
         // *** Start programmer edit section *** (ТипСчета.Валютный CustomAttributes)
 
         // *** End programmer edit section *** (ТипСчета.Валютный CustomAttributes)
+        [Caption("Валютный")]
         Валютный,
-        
-        // *** Start programmer edit section *** (ТипСчета.Депозитный CustomAttributes)
-
-        // *** End programmer edit section *** (ТипСчета.Депозитный CustomAttributes)
-        Депозитный,
         
         // *** Start programmer edit section *** (ТипСчета.СчетПоВкладам CustomAttributes)
 
         // *** End programmer edit section *** (ТипСчета.СчетПоВкладам CustomAttributes)
+        [Caption("Счет по вкладам")]
         СчетПоВкладам,
     }
 }

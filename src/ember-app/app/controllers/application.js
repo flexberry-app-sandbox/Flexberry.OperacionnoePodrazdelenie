@@ -28,31 +28,31 @@ export default Controller.extend({
             link: 'i-i-s-operacionnoe-podrazdelenie-сотрудники-l',
             caption: i18n.t('forms.application.sitemap.operacionnoe-podrazdelenie.i-i-s-operacionnoe-podrazdelenie-сотрудники-l.caption'),
             title: i18n.t('forms.application.sitemap.operacionnoe-podrazdelenie.i-i-s-operacionnoe-podrazdelenie-сотрудники-l.title'),
-            icon: 'folder',
+            icon: 'chart bar',
             children: null
           }, {
             link: 'i-i-s-operacionnoe-podrazdelenie-организация-l',
             caption: i18n.t('forms.application.sitemap.operacionnoe-podrazdelenie.i-i-s-operacionnoe-podrazdelenie-организация-l.caption'),
             title: i18n.t('forms.application.sitemap.operacionnoe-podrazdelenie.i-i-s-operacionnoe-podrazdelenie-организация-l.title'),
-            icon: 'tags',
+            icon: 'address card',
             children: null
           }, {
             link: 'i-i-s-operacionnoe-podrazdelenie-клиенты-l',
             caption: i18n.t('forms.application.sitemap.operacionnoe-podrazdelenie.i-i-s-operacionnoe-podrazdelenie-клиенты-l.caption'),
             title: i18n.t('forms.application.sitemap.operacionnoe-podrazdelenie.i-i-s-operacionnoe-podrazdelenie-клиенты-l.title'),
-            icon: 'list',
+            icon: 'chart bar',
             children: null
           }, {
             link: 'i-i-s-operacionnoe-podrazdelenie-отдел-опер-подр-l',
             caption: i18n.t('forms.application.sitemap.operacionnoe-podrazdelenie.i-i-s-operacionnoe-podrazdelenie-отдел-опер-подр-l.caption'),
             title: i18n.t('forms.application.sitemap.operacionnoe-podrazdelenie.i-i-s-operacionnoe-podrazdelenie-отдел-опер-подр-l.title'),
-            icon: 'suitcase',
+            icon: 'phone',
             children: null
           }, {
             link: 'i-i-s-operacionnoe-podrazdelenie-оформл-догов-l',
             caption: i18n.t('forms.application.sitemap.operacionnoe-podrazdelenie.i-i-s-operacionnoe-podrazdelenie-оформл-догов-l.caption'),
             title: i18n.t('forms.application.sitemap.operacionnoe-podrazdelenie.i-i-s-operacionnoe-podrazdelenie-оформл-догов-l.title'),
-            icon: 'suitcase',
+            icon: 'chart line',
             children: null
           }, {
             link: 'i-i-s-operacionnoe-podrazdelenie-закрытие-счета-l',
@@ -64,24 +64,24 @@ export default Controller.extend({
             link: 'i-i-s-operacionnoe-podrazdelenie-открытие-счета-l',
             caption: i18n.t('forms.application.sitemap.operacionnoe-podrazdelenie.i-i-s-operacionnoe-podrazdelenie-открытие-счета-l.caption'),
             title: i18n.t('forms.application.sitemap.operacionnoe-podrazdelenie.i-i-s-operacionnoe-podrazdelenie-открытие-счета-l.title'),
-            icon: 'chart bar',
+            icon: 'folder',
             children: null
           }, {
             link: 'i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-l',
             caption: i18n.t('forms.application.sitemap.operacionnoe-podrazdelenie.i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-l.caption'),
             title: i18n.t('forms.application.sitemap.operacionnoe-podrazdelenie.i-i-s-operacionnoe-podrazdelenie-прием-и-обр-поруч-l.title'),
-            icon: 'briefcase',
+            icon: 'paperclip',
             children: null
           }, {
             link: 'i-i-s-operacionnoe-podrazdelenie-должности-l',
             caption: i18n.t('forms.application.sitemap.operacionnoe-podrazdelenie.i-i-s-operacionnoe-podrazdelenie-должности-l.caption'),
             title: i18n.t('forms.application.sitemap.operacionnoe-podrazdelenie.i-i-s-operacionnoe-podrazdelenie-должности-l.title'),
-            icon: 'folder',
             children: null
           }, {
             link: 'i-i-s-operacionnoe-podrazdelenie-формир-досье-l',
             caption: i18n.t('forms.application.sitemap.operacionnoe-podrazdelenie.i-i-s-operacionnoe-podrazdelenie-формир-досье-l.caption'),
             title: i18n.t('forms.application.sitemap.operacionnoe-podrazdelenie.i-i-s-operacionnoe-podrazdelenie-формир-досье-l.title'),
+            icon: 'folder',
             children: null
           }]
         }

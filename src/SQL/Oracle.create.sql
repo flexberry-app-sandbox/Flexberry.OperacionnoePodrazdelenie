@@ -94,7 +94,7 @@ CREATE TABLE "ЗакрытиеСчета"
 
 	"ДатаЗакрСчета" DATE NULL,
 
-	"ТипСчета" NVARCHAR2(13) NULL,
+	"ТипСчета" NVARCHAR2(15) NULL,
 
 	"Задолжности" NUMBER(1) NULL,
 
@@ -117,7 +117,7 @@ CREATE TABLE "ОткрытиеСчета"
 
 	"ДатаОткрСчета" DATE NULL,
 
-	"ТипСчета" NVARCHAR2(13) NULL,
+	"ТипСчета" NVARCHAR2(15) NULL,
 
 	"ВидВалюты" NVARCHAR2(255) NULL,
 
